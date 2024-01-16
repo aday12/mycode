@@ -14,7 +14,6 @@ def name():
             break
         except TypeError:
             print("\nPlease only input a valid name. For example: Aaron, Hutch, Michael Jordan, ajlkdjhfklajsdf")
-name()
 
 def generation():
     while True:
@@ -43,7 +42,6 @@ def generation():
             break
         except TypeError:
             print("\nPlease enter a number. For example: 42, 58, 15 etc.")
-generation()
 
 
 
@@ -53,5 +51,5 @@ def main():
     name()
     generation()
     # main only works if the user is inside of the main funciton
-    if __name__ == " __main__":
-        main()
+if __name__ == "__main__":
+    main()
