@@ -2,6 +2,7 @@
 # same code
 import requests
 from pprint import pprint
+from datetime import datetime, timedelta
 
 def name():
     while True:
@@ -11,6 +12,9 @@ def name():
             break
         except TypeError:
             print("\nPlease only input a valid name. For example: Aaron, Hutch, Michael Jordan, ajlkdjhfklajsdf")
+
+# this line establishes a global var of "user_age". We will be using this in the generation and the fun_facts functions
+user_age=int((input("\nHow old are you?\n>").strip))
 
 def generation():
     while True:
