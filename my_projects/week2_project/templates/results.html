@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<body>
+    <h1>Your results are in!</h1>
+    <hr>
+    <br>
+    <p>Hello, {{ name }}, you are {{ age }} years old and were born in the year: {{ bday }}! Here are some notable things from {{ bday }}:</p>
+    <br>
+    {% if age >= 123 %}
+        <p>You're a member of the Lost Generation. That doesn't sound fun D:</p>
+    
+    {% elif age >= 96 and  123 > age %}
+        <p>You're a member of the Greatest Generation, I salute you :D</p>
+
+    {% elif age >= 77 and 96 > age %}
+        <p>Shhhhhhhhh, you're a member of the Silent Generation</p>
+    
+    {% elif age >= 59 and 77 > age %}
+        <p>YOU'RE A BOOMER!!!!!!</p>
+
+    {% elif age >= 43 and 59 > age %}
+        <p>You're a member of Gen X. AKA the Silent Generation Part 2</p>
+    
+    {% elif age >= 27 and 43 > age %}
+        <p>You're a Millennial. Where were you for Y2K?</p>
+
+    {% elif age >= 11 and 27 > age %}
+        <p>WHAT'S UP ZOOMER?!?!?!</p>
+
+    {% elif age >= 0 and 11 > age %}
+        <p>The future is yours Gen Alpha!</p>
+
+    {% else %}
+        <p>Hmmmm... seems like you hadn't arrived yet!</p>
+</body>
+</html>
